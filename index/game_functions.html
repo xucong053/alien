@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="\">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>GAME_FUNCTIONS &#8212; main xc documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     'xc',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ALIEN" href="alien.html" />
+    <link rel="prev" title="ALIEN_INVASION" href="alien_invasion.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-game_functions">
+<span id="game-functions"></span><h1>GAME_FUNCTIONS<a class="headerlink" href="#module-game_functions" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="game_functions.check_events">
+<code class="descclassname">game_functions.</code><code class="descname">check_events</code><span class="sig-paren">(</span><em>ai_settings</em>, <em>screen</em>, <em>ship</em>, <em>bullets</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/game_functions.html#check_events"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#game_functions.check_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>响应按键和鼠标事件</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="game_functions.check_keydown_events">
+<code class="descclassname">game_functions.</code><code class="descname">check_keydown_events</code><span class="sig-paren">(</span><em>event</em>, <em>ai_settings</em>, <em>screen</em>, <em>ship</em>, <em>bullets</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/game_functions.html#check_keydown_events"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#game_functions.check_keydown_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>响应按键</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="game_functions.check_keyup_events">
+<code class="descclassname">game_functions.</code><code class="descname">check_keyup_events</code><span class="sig-paren">(</span><em>event</em>, <em>ship</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/game_functions.html#check_keyup_events"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#game_functions.check_keyup_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>松开按键置位</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="game_functions.create_fleet">
+<code class="descclassname">game_functions.</code><code class="descname">create_fleet</code><span class="sig-paren">(</span><em>ai_settings</em>, <em>screen</em>, <em>aliens</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/game_functions.html#create_fleet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#game_functions.create_fleet" title="Permalink to this definition">¶</a></dt>
+<dd><p>创建外星人群</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="game_functions.fire_bullet">
+<code class="descclassname">game_functions.</code><code class="descname">fire_bullet</code><span class="sig-paren">(</span><em>ai_settings</em>, <em>screen</em>, <em>ship</em>, <em>bullets</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/game_functions.html#fire_bullet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#game_functions.fire_bullet" title="Permalink to this definition">¶</a></dt>
+<dd><p>如果还没有达到限制，就发射一颗子弹</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="game_functions.update_bullets">
+<code class="descclassname">game_functions.</code><code class="descname">update_bullets</code><span class="sig-paren">(</span><em>bullets</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/game_functions.html#update_bullets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#game_functions.update_bullets" title="Permalink to this definition">¶</a></dt>
+<dd><p>更新子弹的位置，并删除已消失的子弹</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="game_functions.update_screen">
+<code class="descclassname">game_functions.</code><code class="descname">update_screen</code><span class="sig-paren">(</span><em>ai_settings</em>, <em>screen</em>, <em>ship</em>, <em>aliens</em>, <em>bullets</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/game_functions.html#update_screen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#game_functions.update_screen" title="Permalink to this definition">¶</a></dt>
+<dd><p>更新屏幕上的图像，并切换到新屏幕</p>
+</dd></dl>
+
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="alien_invasion.html" title="previous chapter">ALIEN_INVASION</a></li>
+      <li>Next: <a href="alien.html" title="next chapter">ALIEN</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, xc.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/game_functions.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
